@@ -2,7 +2,9 @@
 
 Este repositorio contiene la informacion necesaria para configurar el ambiente para el desafio y los comandos para la interaccion con la aplicacion de Angular.
 
-## Jenkins
+## Setup del Ambiente
+
+### Jenkins
 
 Dentro del repositorio existe un archivo llamado `Dockerfile`, este archivo contiene las instrucciones para construir una imagen de Docker con Jenkins - Angular - SonarScanner - Nginx instalados, para hacer el setup hay que seguir los siguientes pasos.
 
@@ -20,7 +22,7 @@ docker run -d -p 8080:8080 -p 50000:50000 -p 8081:80 --restart=on-failure --moun
 # Accesamos a la instancia por el puerto 8080 en nuestro localhost
 ```
 
-## SonarQube
+### SonarQube
 
 SonarQube es una herramienta para analisis de vulnerabilidades en codigo, es ampliamente utilizado en el mercado y tiene un 'sabor' open source, vamos a utilizar esta herramienta para que nuestro Jenkins pueda ejecutar pruebas de analisis de codigo estatico en nuestra aplicacion Angular, vamos a ejecutar el siguiente comando.
 
