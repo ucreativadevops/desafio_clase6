@@ -35,7 +35,7 @@ docker run -d -p 9000:9000 --restart=on-failure sonarqube:lts-community
 
 Adjunto encontrara la lista de comandos que se deben utilizar para interactuar con la aplicacion Angular.
 
-| Left columns        | Right columns                                 |
+| Comando             | Descripcion                                   |
 | ------------------- |-----------------------------------------------|
 | npm install         | Instala las dependencias de la Aplicacion     |
 | npm run lint        | Ejecuta las pruebas Lint del codigo           |
