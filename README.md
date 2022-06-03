@@ -45,6 +45,8 @@ docker exec jenkins-nginx service nginx start
 
 # Procedemos a borrar el archivo template que tiene nginx con el comando
 docker exec jenkins-nginx rm /var/www/html/index.nginx-debian.html
+
+# Tendremos el servidor web listo para el deployment
 ```
 
 ## Comandos para la Aplicacion Angular e Inicializar Servidor Web
