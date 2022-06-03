@@ -49,7 +49,7 @@ docker exec jenkins-nginx rm /var/www/html/index.nginx-debian.html
 # Tendremos el servidor web listo para el deployment
 ```
 
-## Comandos para la Aplicacion Angular e Inicializar Servidor Web
+## Comandos para la Aplicacion Angular
 
 Adjunto encontrara la lista de comandos que se deben utilizar para interactuar con la aplicacion Angular.
 
