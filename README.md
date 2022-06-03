@@ -17,7 +17,7 @@ docker volume create jenkins_data
 docker build -t jenkins-ucreativa:v1 .
 
 # Creamos la instancia de Jenkins con el comando docker run [nombre_image]:[tag]
-docker run -d -p 8080:8080 -p 50000:50000 -p 8081:80 --restart=on-failure --mount "type=volume,src=jenkins_data,dst=/var/jenkins_home" jenkins-ucreativa:v1
+docker run -d -p 8080:8080 -p 50000:50000 -p 8081:80 --restart=on-failure --mount "type=volume,src=jenkins_data,dst=/var/jenkins_home" --name jenkins-nginx jenkins-ucreativa:v1
 
 # Accesamos a la instancia por el puerto 8080 en nuestro localhost
 ```
