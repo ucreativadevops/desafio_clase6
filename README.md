@@ -27,7 +27,7 @@ docker run -d -p 8080:8080 -p 50000:50000 -p 8081:80 --restart=on-failure --moun
 SonarQube es una herramienta para analisis de vulnerabilidades en codigo, es ampliamente utilizado en el mercado y tiene un 'sabor' open source, vamos a utilizar esta herramienta para que nuestro Jenkins pueda ejecutar pruebas de analisis de codigo estatico en nuestra aplicacion Angular, vamos a ejecutar el siguiente comando.
 
 ```sh
-# Creamos una instancia de SonarQube server de Docker utilizando el comando docker run
+# Creamos una instancia de SonarQube server de Docker utilizando el comando docker run [nombre_image]:[tag]
 docker run -d -p 9000:9000 --restart=on-failure sonarqube:lts-community
 
 # Accesamos a la instancia por el puerto 9000 en nuestro localhost, deberemos de cambiar el password inicial se recomienda utilizar el admin123 para efectos de demostracion
@@ -43,7 +43,7 @@ docker exec jenkins-nginx service nginx start
 
 # Visualizamos un mensaje en pantalla que nos indica que se esta inicializando el servidor web 'Starting nginx: nginx', luego podemo acceder a la instancia por el puerto 8081 en nuestro localhost
 
-# Procedemos a borrar el archivo template que tiene nginx con el comando
+# Procedemos a borrar el archivo template que tiene nginx con el comando exec [nombre_contenedor] [comando]
 docker exec jenkins-nginx rm /var/www/html/index.nginx-debian.html
 
 # Tendremos el servidor web listo para el deployment
