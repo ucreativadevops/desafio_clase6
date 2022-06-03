@@ -33,6 +33,17 @@ docker run -d -p 9000:9000 --restart=on-failure sonarqube:lts-community
 # Accesamos a la instancia por el puerto 9000 en nuestro localhost, deberemos de cambiar el password inicial se recomienda utilizar el admin123 para efectos de demostracion
 ```
 
+### Servidor Web
+
+La imagen proporcionada de Jenkins tiene instalado el servidor web "nginx", para poder inicializarlo ejecutar el siguiente comando
+
+```sh
+# Ejecutamos una instruccion hacia el contenedor con el comando docker exec [nombre_contenedor] [comando]
+docker exec jenkins-nginx service nginx start
+
+# Visualizamos un mensaje en pantalla que nos indica que se esta inicializando el servidor web 'Starting nginx: nginx', luego podemo acceder a la instancia por el puerto 8081 en nuestro localhost
+```
+
 ## Comandos para la Aplicacion Angular e Inicializar Servidor Web
 
 Adjunto encontrara la lista de comandos que se deben utilizar para interactuar con la aplicacion Angular.
