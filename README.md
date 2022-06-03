@@ -64,7 +64,7 @@ Adjunto encontrara la lista de comandos que se deben utilizar para interactuar c
 
 ## Deployment
 
-Para el deployment de la aplicacion, se debe de copiar los archivos generados en la carpeta **dist** hacia el directorio donde Nginx contiene los archivos raiz del servidor web, el cual es /var/www/html/
+Para el deployment de la aplicacion, se debe de copiar los archivos generados en la carpeta **dist** hacia el directorio donde Nginx contiene los archivos raiz del servidor web, el cual es **/var/www/html/**
 
 ## Demostracion
 
