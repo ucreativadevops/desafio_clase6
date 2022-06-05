@@ -22,8 +22,10 @@ pipeline{
         }
         stage('Build project'){
             steps{
-                echo 'Compiling the Angular project'
+            echo 'Compiling the Angular project'
             sh 'npm run build'
+            echo "reviewing that the directory exists"
+            sh 'ls -a'
             }
         }
         stage('Deployment'){
