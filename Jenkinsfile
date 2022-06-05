@@ -21,8 +21,10 @@ pipeline{
             }
         }
         stage('Build project'){
-            echo 'Compiling the Angular project'
+            steps{
+                echo 'Compiling the Angular project'
             sh 'npm run build'
+            }
         }
         stage('Deployment'){
             steps{
@@ -31,3 +33,4 @@ pipeline{
         }
     }
 }
+
