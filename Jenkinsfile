@@ -1,5 +1,5 @@
 pipeline{
-    agent{ 'aws' }
+    agent any
     tools{
         nodejs 'nodejs14'
     }
