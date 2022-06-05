@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent{ 'aws' }
     tools{
         nodejs 'nodejs14'
     }
@@ -39,3 +39,4 @@ pipeline{
     }
 }
 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1RqMtF54/IPQzgil76TvsyaAGX5eSI6GqLYQQvPoWEdbpxEJM9SJ+In2B/NiYuag4TiYwFiQcRfZaLWgmXlZkaPlU3FDSnD39kf4VWl7YgpZMUXm/iXCCqm+y1Zf67kjKhsLTWhmLuhq92Nehl/p6V75K+XzbFqEtxc+ZzBC1bCvVNg2EkLiOhrivPA1j4aWFIitZypWlziKPPeaHXjjQGiOmxRsTxGqWuluj9VNIN5i1IHIoZ9xliedIEzXxgj5gqt5Of/jHns5Ao3SHaOBYLOao95fq3hMmSqmhkwZOezLneT1ay78Dw0czpEN9K7LhQWuHLSufT2C2hEjFgPiz ec2-user@ip-172-31-25-229.ec2.internal
