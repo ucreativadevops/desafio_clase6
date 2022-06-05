@@ -9,7 +9,7 @@ pipeline{
                 echo 'installing npm'
                 sh 'npm install'
                 echo 'installing chrome'
-                sh 'sudo apt install ./google-chrome-stable_current_amd64.deb'
+                sh 'apt install ./google-chrome-stable_current_amd64.deb'
             }
         }
         stage('Unit tests'){
