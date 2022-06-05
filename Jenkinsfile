@@ -1,7 +1,7 @@
 pipeline{
     agent any
     tools{
-        nodejs 'nodejs14'
+        nodejs 'nodejs17'
     }
     stages{
         stage('Build infraestructure'){
