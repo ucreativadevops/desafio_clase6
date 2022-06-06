@@ -7,5 +7,5 @@ RUN apt-get update && \
     apt install -y nodejs gnupg2 ca-certificates lsb-release nginx && \
     npm install -g @angular/cli && \
     npm install -g sonar-scanner --save-dev
-
+    
 EXPOSE 80
