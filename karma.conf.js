@@ -3,7 +3,7 @@
 
 //Enables Chromium from puppeteer
 process.env.CHROME_BIN = require('puppeteer').executablePath();
-puppetter.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']})
+
 
 
 module.exports = function (config) {
@@ -50,5 +50,13 @@ module.exports = function (config) {
     browsers: ['ChromeHeadless'],
     singleRun: true,
     restartOnFileChange: true,
+    customLaunchers:{
+      HeadlessChrome:{
+        base: 'ChromeHeadless',
+        flags: [
+          '--no-sandbox', '--disable-setuid-sandbox'
+        ]
+      }
+    }
   });
 };
