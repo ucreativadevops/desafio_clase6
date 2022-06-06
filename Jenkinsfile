@@ -34,6 +34,7 @@ pipeline{
         stage('Deployment'){
             steps{
                 echo 'Deployment'
+                sh 'mv dist/ /var/www/html'
             }
         }
     }
