@@ -47,15 +47,12 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['ChromeHeadless'],
+    browsers: ['Chrome_for_jenkins'],
     singleRun: true,
-    restartOnFileChange: true,
     customLaunchers:{
-      HeadlessChrome:{
+      Chrome_for_jenkins:{
         base: 'ChromeHeadless',
-        args: [
-          '--no-sandbox', '--disable-setuid-sandbox'
-        ]
+        flags: ['--no-sandbox','--disable-setuid-sandbox']
       }
     }
   });
