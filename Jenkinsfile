@@ -12,7 +12,6 @@ pipeline {
 
         stage('Unit Test') {
             steps {
-                sh 'npm run lint'
                 sh 'npm run test'
             }
         }
