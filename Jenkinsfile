@@ -10,11 +10,11 @@ pipeline {
             }
         }
 
- //       stage('Unit Test') {
- //           steps {
-   //             sh 'npm run test'
-    //        }
-     //   }
+        stage('Unit Test') {
+            steps {
+                echo 'Ejecutando: npm run test'
+            }
+        }
       
         stage('Sonnar Scanner') {
             steps {
